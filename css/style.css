@@ -1,0 +1,97 @@
+/*Seletor universal - colocar para tirar as margens no navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #121214;
+    background-image: url(../assets/bg.svg);
+    background-position-x: center;
+    background-position-y: -715px;
+}
+
+/*TODOS OS ELEMENTOS DENTRO DA 'TAG' 'BODY'*/
+bodyq * {
+    font-family: 'Roboto', sans-serif;
+}
+
+#app {
+    width: fit-content;
+    margin: 52px auto;
+}
+
+header {
+    margin-bottom: 63px;
+    text-align: center;
+}
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card {
+    padding: 32px 23px;
+    text-align: center;
+
+    background: #1D1C19;
+    border-bottom: 2px solid #F7DD43;
+    border-radius: 6px;
+}
+
+.card h2 {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px 16px;
+    border: 1px solid #746615;
+    border-radius: 6px;
+
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 53px;
+
+    color: #F7DD43;
+}
+
+.card h2 span {
+    color: #E1E1E6;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /*'gap' é o espaço entre um elemento e outro*/
+
+    width: 270px;
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* o sinal de '+' entre os 'li', significa que ele vai procurar a tag 'li' que tenha visto depois de outra tag 'li'*/
+.card ul li + li {
+    padding-top: 24px;
+    border-top: 1px solid #323238;
+}
+
+.card ul li strong {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 125%;
+
+    color: #E1E1E6;
+}
